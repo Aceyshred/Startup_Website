@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Nye!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Modak&family=Noto+Sans+NKo&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bill Nye</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    <h1 id="billText">Bill Nye</h1>
+    <div class="container">
+        <div class="row" >
+            <div class="col-4" id="billBio">
+                William Sanford Nye (born November 27, 1955) is an American mechanical engineer, science communicator,
+                and television presenter. He is best known as the host of the science education television show Bill Nye
+                the Science Guy (1993–1999) and as a science educator in pop culture.
+            </div>
+        </div>
+    </div>
+</div>
+<div id="background2">
+    <h3 class="event1">
+        Upcoming Events:
+    </h3>
+    <div class="container" id="event2">
+        <div class="row">
+            <div class="col" id="event3">
+                <h2>Calgary, AB</h2>
+                <h3>March 1, 2023</h3>
+                <p>Guest speaking lecture</p> 
+            </div>
+            <div class="col" id="event4">
+                <h2>Red Deer, AB</h2>
+                <h3>March 3, 2023</h3>
+                <p>Guest speaking lecture</p>
+            </div>
+            <div class="col" id="event5">
+                <h2>Edmonton, AB</h2>
+                <h3>March 4, 2023</h3>
+                <p>Guest speaking lecture</p>
+            </div>
+        </div>
+    </div>
+    <h3 id="articles">
+        Articles:
+    </h3>
+    <h4><a href="https://globalnews.ca/news/7156942/coronavirus-bill-nye-mask/" class="link"> Bill Nye the Science Guy returns for ‘wear a mask!’ PSA on coronavirus</a></h4>
+    <p>
+        
+Bill Nye appears in a new TikTok video explaining why science rules — especially when it comes to the science of masks during a pandemic.
+TRENDING
+JUL 9, 2020
+    </p>
+    <h4><a href="https://globalnews.ca/news/5428178/spacex-falcon-heavy-night-launch/" class="link"> SpaceX’s Falcon Heavy rocket lifts off with 24 satellites in first night launch</a></h4>
+    <p>It was the third flight of a Falcon Heavy rocket, but the first ordered by the military.</p>
+    <h3 id="favorite">Who is your favorite scientist?</h3>
+    <div class="form">
+        <form>
+            <input type="text" id="userInput"> <br> <br>
+            <button id="button" onclick="myFunction()" type="button">Submit</button>
+            <h1 id="message">Your favorite scientist is: </h1>
+        </form>
+        <script>
+            function myFunction() {
+                let userInput = document.querySelector("#userInput");
+                let message = document.querySelector("#message");
+                message.innerHTML = "Your favorite scientist is: " + userInput.value + "!";
+
+            }
+        </script>
+    </div>
+    
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    </body>
+<footer>
+<div>
+    <p id="footerText">
+        &copy My name isn't Peter
+    </p>
+</div>
+</footer>
+</html>
